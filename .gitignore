@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# Custom Files
+home/dataset/*jpg
+/home/trainer/*yml
+db.sqlite3
+
 # Distribution / packaging
 .Python
 build/
