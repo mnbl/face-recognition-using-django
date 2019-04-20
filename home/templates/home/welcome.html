@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+<style>
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 14px;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="display-table">
+    <div class="display-table-cell">
+            <a class="notify-btn topright" href="/"> Go Home
+            </a>
+        
+        <h1 class="title"><b>Welcome {{user.name}}</b></h1>
+        
+    </div><!-- display-table -->
+</div><!-- display-table-cell -->
+
+{% endblock %}

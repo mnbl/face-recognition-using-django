@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Register</title>
+<link href="/static/css/form.css" rel="stylesheet">
+<style>
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 14px;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100"> 
+    <a class="notify-btn topright" href="/"> Go Home
+    </a>       
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="/home/register/" method="POST">
+            {% csrf_token %}
+            <span class="contact100-form-title">
+                Register Form
+            </span>
+
+            <div class="wrap-input100 validate-input">
+                <input class="input100" type="number" name="face_id" placeholder="ID [Must be a number]" required>
+                <span class="focus-input100"></span>
+            </div>
+            
+            <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="name" placeholder="Full Name" required>
+                <span class="focus-input100"></span>
+            </div> 
+            
+            <div class="container-contact100-form-btn">
+                <button type="submit" class="notify-btn">
+                    <span>
+                        Register
+                    </span>
+                </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset" class="notify-btn">
+                        <span>
+                            Clear
+                        </span>
+                    </button>
+            </div>
+        </form>
+        <p>Already have an account? &nbsp;&nbsp;
+            <a href="/home/login/" class="notify-btn">
+                <span>
+                    Login Here
+                </span>
+            </a>
+        </p>
+    </div>
+</div>
+
+<script src="/static/js/form.js"></script>
+
+{% endblock %}

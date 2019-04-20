@@ -1,34 +1,21 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>HOME</title>
+<title>Home</title>
 {% endblock %}
 
 {% block body %}
-<div class="main-area-wrapper" style="background-image:url(../static/images/pic6.jpg);">
-    <div class="main-area center-text" >
+<div class="display-table">
+    <div class="display-table-cell">
         
-        <div class="display-table">
-            <div class="display-table-cell">
-                
-                <h1 class="title"><b>FACE LOGIN</b></h1>
-                <p class="desc font-white">A simple login system using face recognition in python</p>
-            
-                <a class="notify-btn" href="/register/"><b>REGISTER</b></a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="notify-btn" href="/login/"><b>LOGIN</b></a>
-                
-                <ul class="social-btn">
-                    <li class="list-heading">Follow us for update</li>
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                    <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-                </ul>
-                
-            </div><!-- display-table -->
-        </div><!-- display-table-cell -->
-    </div><!-- main-area -->
-</div><!-- main-area-wrapper -->
+        <h1 class="title"><b>Face Recognition System</b></h1>
+        <p class="desc font-white">A simple login system using face recognition in python</p>
+    
+        <a class="notify-btn" href="/home/register/"><b>Register</b></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="notify-btn" href="/home/login/"><b>Login</b></a>
+        
+    </div><!-- display-table -->
+</div><!-- display-table-cell -->
+
 {% endblock %}
