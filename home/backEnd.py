@@ -111,6 +111,8 @@ class FaceRecognition:
         #iniciate id counter
         id = 0
 
+        confidence = 0
+
         # Retriving names from database
         # data = conn.execute('''select * from facedata''')
         # for x in data:
