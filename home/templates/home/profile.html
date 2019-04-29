@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Profile</title>
+<link href="/static/css/profile.css" rel="stylesheet">
+<link rel="stylesheet" href="/static/linericon/style.css">
+<style>
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 14px;
+    }
+    h1, h2, h3, h4, h5, p, li, div{
+        color: black;
+        align-items: left;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+{% endblock %}
+{% block body %}
+<div class="container-profile">
+    <a class="notify-btn topright" href="/"> Go Home </a> 
+    <div class="wrap-profile">
+        <div class="row">
+            <div class="col-4">
+                <img src="{{ user.image.url }}">
+            </div>
+            <div class="col-1"></div>
+            <div class="col-7">
+                <h4>Welcome,</h4>
+                <h3>{{ user.name }}</h3>
+                <h5><i class="lnr lnr-briefcase"> </i>{{ user.job }}</h5>
+                <h6>{{ user.bio }}</h6>
+                <br>
+                <ul class="list basic_info">
+                    <li></li>
+                    <li><i class="lnr lnr-phone-handset"></i> {{ user.bio }} </li><br>
+                    <li><i class="lnr lnr-envelope"></i> {{ user.email }} </li><br>
+                    <li><i class="lnr lnr-home"></i> {{ user.address }} </li><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

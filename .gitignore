@@ -10,6 +10,7 @@ __pycache__/
 home/dataset/*jpg
 /home/trainer/*yml
 db.sqlite3
+/website/media/profile_image/*jpg
 
 # Distribution / packaging
 .Python

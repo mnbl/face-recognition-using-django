@@ -108,9 +108,6 @@ class FaceRecognition:
 
         font = cv2.FONT_HERSHEY_SIMPLEX
 
-        #iniciate id counter
-        id = 0
-
         confidence = 0
 
         # Retriving names from database

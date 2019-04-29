@@ -48,5 +48,5 @@ def welcome(request, face_id):
         'user': UserProfile.objects.get(face_id= face_id)
     }
 
-    return render(request, 'home/welcome.html', data)
+    return render(request, 'home/profile.html', data)
     

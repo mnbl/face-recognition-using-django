@@ -10,6 +10,13 @@
         right: 16px;
         font-size: 14px;
     }
+    label{
+        background: transparent;
+        font-family: Raleway-SemiBold;
+        font-size: 18px;
+        color: #333333;
+        line-height: 1.2;
+    }
 </style>
 {% endblock %}
 
@@ -25,13 +32,43 @@
             </span>
 
             <div class="wrap-input100 validate-input">
-                <input class="input100" type="number" name="face_id" placeholder="ID [Must be a number]" required>
-                <span class="focus-input100"></span>
-            </div>
-            
-            <div class="wrap-input100 validate-input">
                 <input class="input100" type="text" name="name" placeholder="Full Name" required>
                 <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="number" name="face_id" placeholder="ID [Must be a number]" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="email" placeholder="Email Address" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="phone" placeholder="Contact Number" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100 rs1 validate-input">
+                <input class="input100" type="text" name="job" placeholder="Current Occupation" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="address" placeholder="Address" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="bio" placeholder="About You" required>
+                <span class="focus-input100"></span>
+            </div> 
+
+            <div class="wrap-input100  validate-input">
+                <label for="dp">Upload your Profile Picture  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="dp" type="file" name="image" accept="image/*">
             </div> 
             
             <div class="container-contact100-form-btn">
@@ -48,13 +85,6 @@
                     </button>
             </div>
         </form>
-        <p>Already have an account? &nbsp;&nbsp;
-            <a href="/home/login/" class="notify-btn">
-                <span>
-                    Login Here
-                </span>
-            </a>
-        </p>
     </div>
 </div>
 

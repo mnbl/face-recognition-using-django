@@ -8,4 +8,10 @@ class RegisterForm(forms.ModelForm):
         fields = (
             'face_id',
             'name',
+            'address',
+            'job',
+            'phone',
+            'email',
+            'bio',
+            'image',
         )
