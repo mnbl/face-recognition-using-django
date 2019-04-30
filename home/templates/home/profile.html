@@ -27,7 +27,11 @@
     <div class="wrap-profile">
         <div class="row">
             <div class="col-4">
-                <img src="{{ user.image.url }}">
+                {% if user.image %}
+                   <img src="{{ user.image.url }}">
+                {% else %}
+                    <img src="/static/images/dp.jpeg">
+                {% endif %}
             </div>
             <div class="col-1"></div>
             <div class="col-7">
@@ -38,7 +42,7 @@
                 <br>
                 <ul class="list basic_info">
                     <li></li>
-                    <li><i class="lnr lnr-phone-handset"></i> {{ user.bio }} </li><br>
+                    <li><i class="lnr lnr-phone-handset"></i> {{ user.phone }} </li><br>
                     <li><i class="lnr lnr-envelope"></i> {{ user.email }} </li><br>
                     <li><i class="lnr lnr-home"></i> {{ user.address }} </li><br>
                 </ul>
