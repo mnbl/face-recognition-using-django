@@ -15,7 +15,7 @@ Facial Recognition System using Python
 
 - Make git pull of the whole project
 ```sh
-$ git clone https://github.com/mnbl/website.git/
+$ git clone https://github.com/mnbl/face-recognition-using-django.git/
 ```
 - Install pip3
 ```sh
